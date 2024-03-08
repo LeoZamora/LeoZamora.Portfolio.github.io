@@ -529,10 +529,6 @@ html{
     border-radius: 16px;
 }
 
-.fila-cv .item.der{
-    height: 259px;
-}
-
 .fila-cv .item h4{
     font-size: 20px;
     margin-bottom: 10px;
@@ -559,8 +555,10 @@ html{
     border-right: 2px solid rgba(156, 28, 28, 0.463);
     margin-right: 20px;
 }.fila-cv .der{
+    text-align: center;
     border-left: 2px solid rgba(156, 28, 28, 0.463);
     margin-left: 20px;
+    height: 259px;
 }
 
 /* Efecto de Conectar circulo */
