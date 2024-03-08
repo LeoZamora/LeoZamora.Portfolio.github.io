@@ -1,0 +1,839 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Righteous&family=Work+Sans:wght@100;200;300;600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+.contenedor-header{
+    background: rgba(79, 11, 18, .8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+/* Mi nombre */
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header #nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    transition: .5%;
+    text-decoration: none;
+    font-family: 'Righteous';
+}
+
+.contenedor-header header #nav ul li a:hover {
+    transition: .3s;
+    color: #FCB9B2;
+} 
+
+.nav-responsive{
+    background-color: #FCB9B2;
+    color: #502F4C;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Seccion de inicio */
+
+.inicio{
+    background: linear-gradient(to top, rgb(107, 15, 26, .8), rgb(107, 15, 26, .1)),
+    url(imgs/Fondo2\ .jpg);
+    /* background-color: #6B0F1A; */
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: rgb(107, 15, 26, 80%);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    background-color: rgb(107, 15, 26, 80%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(156, 28, 28, 0.463);
+    max-width: 350px;
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #fff; 
+    display: block;
+    width: 60%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 35px;
+    font-family: 'Righteous';
+}
+
+            
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #FCB9B2;
+}
+
+/* Sobre Mi */
+.sobremi{
+    /* background-color: #1e2326; */
+    background-color: #4a0a12;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2{
+    font-size: 40px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p{
+    text-align: center;
+    font: 18px;
+    line-height: 22px; 
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span{
+    color: #fff;
+    font-weight: bold;
+}
+
+.sobremi .fila{
+   display: flex; 
+}
+
+.sobremi .fila .col{
+    width: 50%;
+}
+
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #c985c1;
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span{
+    background-color: #FCB9B2;
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: bold; 
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses{
+    width: 100px;
+    height: 100px;
+
+    background-color: rgb(107, 15, 26, 60%);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    background-color: rgb(107, 15, 26, 60%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(156, 28, 28, 0.463);
+
+    margin: 0 15px 15px 0;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    transition: .3s;
+}.sobremi .fila .col .contenedor-intereses .intereses:hover{
+    background-color: rgb(107, 15, 26, 100%);
+    ;
+}.sobremi .fila .col .contenedor-intereses .intereses span#text{
+    text-align: center;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobremi button{
+    cursor: pointer;
+    background-color: #4a0a12;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    transition: .5;
+}.sobremi button:hover{
+    background-color: rgb(107, 15, 26, 100%);
+    transition: .3s;
+}
+
+/* Seccion Skills */
+.skills{
+    background-color: #6B0F1A;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .contenedor-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2{
+    font-size: 40px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .fila{
+    display: flex; 
+    border-radius: 16px;
+
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255, 0.01);
+    box-shadow: 0 4px 30px #2d060b;
+    background-color: transparent;
+    border: 1px solid rgba(156, 28, 28, 0.463);
+}
+
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.skills .fila .der{
+    border-left: 2px solid #fff;
+}
+
+.skills .fila .col h3{
+    font-size: 20px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .barra-skill{
+    /* altura de la barra */
+    height: 8px;
+    /* anchura de la barra */
+    width: 80%;
+     
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgb(255, 255, 255, 0.01);
+    box-shadow: 0 4px 30px #2d060b;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(156, 28, 28, 0.463);
+
+
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.skills .skill .progreso{
+    background-color: #FCB9B2;
+    /* con la position absolute determinamos que el espacio del progreso sea solo el que ocupa el numero del porcentaje */
+    position: absolute;
+
+    /* top y left se usan para determinar cuanto margen va a usar el cuadro que esta en posicion absoluta dentro de su bloque contenedor que en este caso es el div.progreso */
+    top: 0;
+    left: 0;
+
+    /* le aplicamos las mismas dimensiones que tiene la barra principal pero de manera invertida*/
+    height: 8px;
+    border-radius: 5px;
+}
+
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: #FCB9B2;
+    color: #502F4C;
+    border-radius: 50px;
+
+    line-height: 25px;
+    text-align: center;
+    top: -10px;
+    right: -15px;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.img{
+    width: 20px;
+    margin: 0 5px 0 5px;
+    padding-top: 5px;
+}
+
+
+/* GENERAMOS ANIMACION DE BARRA LLENANDOSE */
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.skills .skill .html-css{
+    width: 0%;
+    animation: 2s html-css forwards;
+}
+@keyframes html-css {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .csharp{
+    width: 0%;
+    animation: 2s csharp forwards;
+}
+@keyframes csharp {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .cpp{
+    width: 0%;
+    animation: 2s cpp forwards;
+}
+@keyframes cpp {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.skills .skill .sql{
+    width: 0%;
+    animation: 2s sql forwards;
+}
+@keyframes sql {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .trabajo-equipo{
+    width: 0%;
+    animation: 2s trabajo-equipo forwards;
+}
+@keyframes trabajo-equipo{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad{
+    0%{width: 0%;}
+    100%{width: 99%;}
+}
+
+.skills .skill .dedicacion{
+    width: 0;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion{
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.skills .skill .pm{
+    width: 0%;
+    animation: 2s pm forwards;
+}
+@keyframes pm{
+    0%{width: 0%;}
+    100%{width: 94%;}
+}
+
+
+/* CSS DEL CURRICULUM */
+
+.curriculum{
+    background-color: #4a0a12;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.curriculum .contenido-curriculum{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.fila-cv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fila-cv .col{
+    width: 49%;
+    padding: 0 20px;
+}
+
+.fila-cv .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.fila-cv .izquierda{
+    border-right: 2px solid rgb(255, 255, 255, .5);
+}
+
+.fila-cv .derecha{
+    border-left: 2px solid rgb(255, 255, 255, .5);
+}
+
+.fila-cv .item{
+    padding: 25px;
+    margin-bottom: 30px;
+
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgb(255, 255, 255, 0.01);
+    box-shadow: 0 4px 30px #2d060b;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(156, 28, 28, 0.463);
+
+    position: relative;
+    border-radius: 16px;
+}
+
+.fila-cv .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.fila-cv .item .casa{
+    color: #ffd6d6;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.fila-cv .item .fecha{
+    display: block;
+    color: #FCB9B2;
+    margin-bottom: 10px;
+}
+
+.fila-cv .item p{
+    line-height: 24px;
+}
+
+.fila-cv .izq{
+    border-right: 2px solid rgba(156, 28, 28, 0.463);
+    margin-right: 20px;
+}.fila-cv .der{
+    border-left: 2px solid rgba(156, 28, 28, 0.463);
+    margin-left: 20px;
+}
+
+/* Efecto de Conectar circulo */
+
+.fila-cv .item .conectori{
+    height: 2px;
+    background-color: rgba(156, 28, 28, 0.463);
+    width: 47px;
+    position: absolute;
+    top: 60%;
+    right: -47px;
+    z-index: 5;
+}
+
+.fila-cv .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(156, 28, 28);
+    /* float sirve para posicionar de manera flotante un objeto hacia arriba, abajo, izq, der */
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.fila-cv .item .conectord{
+    height: 2px;
+    background-color: rgba(156, 28, 28, 0.463);
+    width: 47px;
+    position: absolute;
+    top: 40%;
+    left: -47px;
+    z-index: 5;
+}
+
+.fila-cv .item .conectord .curculod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(156, 28, 28);
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+/* -------------------------------------------------------------- */
+
+
+/* Portafolio CSS */
+
+
+.portafolio{
+    background-color: #6B0F1A;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.portafolio .contenido-portafolio{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.portafolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.portafolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portafolio .galeria .proyecto{
+    border: 1px solid rgb(255, 255, 255, 0.01);
+    box-shadow: 0 4px 30px #2d060b;
+    border: 1px solid rgba(156, 28, 28, 0.463);
+    position: relative;
+    max-width: 350px;
+    height: fit-content;
+    margin-bottom: 15px;
+    border-radius: 16px;
+}
+
+.proyecto img{
+    width: 100%;
+    display: block;
+    border-radius: 16px;
+}
+
+
+/* Efecto Overlay */
+
+.overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(252, 185, 178, .8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    transition: 1s;
+    letter-spacing: 3px;
+    opacity: 0; 
+    border-radius: 16px;
+}
+
+.overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}.overlay:hover h3 {
+    margin-bottom: 0;
+}
+/* -------------------------------------------------------- */  
+
+/* Footer */
+footer{
+    color: #fff;
+    /* padding: 10px 0 30px 0; */
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+footer .contenido{
+    padding: 10px 0;
+    background-color: #2d060b;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+#name{
+    margin-top: 10px;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+    margin: 0 5px;
+    font-size: 15px;
+    transition: .3s;
+}footer .redes a:hover{
+    background-color: #502F4C;
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+footer .arriba{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #502F4C;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(550px);
+    top: 15px;
+    border-radius: 50%;
+    line-height: 30px;
+    font-size: 14px;
+    transition: .5s;
+}
+
+
+/* MOOD RESPONSIVE */
+
+@media screen and (max-width: 980px) {
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    } 
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #6B0F1A;
+        width: 180px;
+    }
+
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        padding: 10px 0;
+    }
+    footer .arriba{
+        transform: translateX(-30px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+
+    .skills .fila .der{
+        border-left: none;
+        border-top: 2px solid #fff;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .skills .fila .der h3{
+        margin-top: 10px;
+    }
+
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila-cv{
+        display: block;
+    }
+    .fila-cv .col{
+        width: 90%;
+    }
+    .fila-cv .izquierda{
+        margin-left: 20px;
+    }
+
+    .portafolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portafolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portafolio .galeria .proyecto img{
+        width: 100%;
+    }
+
+    .contacto .fila{
+        display: block;
+        padding: 0 20px;
+    }
+
+    .contacto .fila .col{
+        width: 100%;
+    }
+
+    .contacto .fila .col .info{
+        top: 50%;
+    }
+
+    footer .arriba{
+        transform: translateX(-30px);
+    }
+}
