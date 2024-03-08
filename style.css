@@ -672,6 +672,11 @@ html{
     border-radius: 16px;
 }
 
+.cal a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .overlay h3{
     margin-bottom: 20px;
     transition: 1s;
