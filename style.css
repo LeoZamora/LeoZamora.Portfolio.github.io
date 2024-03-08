@@ -558,7 +558,7 @@ html{
     text-align: center;
     border-left: 2px solid rgba(156, 28, 28, 0.463);
     margin-left: 20px;
-    height: 259px;
+    height: inherit;
 }
 
 /* Efecto de Conectar circulo */
@@ -757,7 +757,15 @@ footer .arriba{
         right: 0;
         top: 75px;
         background-color: #6B0F1A;
-        width: 180px;
+        border-radius: 5px;
+        
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgb(255, 255, 255, 0.01);
+        box-shadow: 0 10px 10px rgb(45, 6, 11);     
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(156, 28, 28, 0.463);
     }
 
     nav.responsive ul{
@@ -822,20 +830,23 @@ footer .arriba{
         width: 100%;
     }
 
-    .contacto .fila{
-        display: block;
-        padding: 0 20px;
-    }
-
-    .contacto .fila .col{
-        width: 100%;
-    }
-
-    .contacto .fila .col .info{
-        top: 50%;
+    .fila-cv .der{
+        height: inherit;
     }
 
     footer .arriba{
-        transform: translateX(-30px);
+        transform: translateX(-15px);
+    }
+
+    footer .redes{
+        display: inline-flex;
+    }
+
+    footer .redes a{
+        margin-top: 12px;
+        width: 27px;
+        height: 27px;
+        line-height: 27px;
+        font-size: 12px;
     }
 }
