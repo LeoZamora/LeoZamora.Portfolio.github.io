@@ -383,6 +383,12 @@ html{
     padding-top: 5px;
 }
 
+#img-c{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
 
 /* GENERAMOS ANIMACION DE BARRA LLENANDOSE */
 .skills .skill .javascript{
